@@ -1,0 +1,14 @@
+Git - Software
+GitHub -- provider, a company 
+
+Author - Linus Trovalds
+
+Uses:
+		1. It is version control tool
+		2. It helps us to track the changes, collaborate with other programmers,
+
+Basic Terminologies:
+
+		1. Repository - A folder contains allt the files related to the project.
+		2. Read Me file - instrcutions
+		3. Commit - saving the file
