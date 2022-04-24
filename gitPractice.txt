@@ -1,14 +1,55 @@
 Git - Software
 GitHub -- provider, a company 
 
-Author - Linus Trovalds
+Author - Linus Trovalds 
 
 Uses:
-		1. It is version control tool
-		2. It helps us to track the changes, collaborate with other programmers,
+		1. It is version control tool.
+		2. It helps us to track the changes, collaborate with other programmers.
 
 Basic Terminologies:
 
-		1. Repository - A folder contains allt the files related to the project.
+		1. Repository - A folder contains all the files related to the project.
 		2. Read Me file - instrcutions
 		3. Commit - saving the file
+		4. Code in Red colour - Previous version 
+		5. Code in Grean colour - current version changes
+Best Pratices:
+
+		1. Always give commit message relevant to the change.
+		2.
+		
+Branching:
+		1. Branch is isolate development without affecting the other branches in the repo.
+		2. In convention, Master will be the default branch.
+		3. Branching uses: to develop new features, to fix bugs, to safely experiment new ideas.
+Pull Request:
+
+		1. Why PR, Appoving Branch is Master branch owner. So, named this process w.r.t master only.
+		2. Master branch is pulling the new chnages from feature branch
+		3. Steps in creating PR:
+		    		a) commit the changes to feature bracnh
+				b) click on the create PR 
+				c) submit with comments
+		4. Steps in Approving PR:
+				a) assuming no merge conflicts, 
+				b) Review the files changed,
+				c) approve the changes
+				d) Merge and confirm.
+Resolving Merge Conflict:
+				a)open a PR with merge conflicts, 
+				b) click Resolve conflicts,
+				c) open the conflicting file
+				d) 	>>>>>> Exisitng master branch code
+					<<<<<<<< incoming branch branch code
+					=== both are equal
+					
+				e) Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge
+				f) Repear the above steps if you have more than one conflicting file.
+				g) Once you've resolved all the conflicts in the file, click Mark as resolved.
+				h) click Commit merge. This merges the entire feature branch into your master branch.
+				i) If prompted, review the branch that you are committing to (create new branch if needed)
+				j) click Merge pull request
+					
+		
+		
