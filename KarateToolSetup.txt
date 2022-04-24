@@ -1,0 +1,62 @@
+Before downloading the IDE/Code Editor we need to make sure that the below configs are done in our system:
+
+1. Installing the JDK on macOS
+2. Set $JAVA_HOME environment variable
+3. Installing Maven on Mac
+4. Adding Maven to the Environment Path for macOS
+
+
+JDK 8 download https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+Maven Download https://maven.apache.org/download.cgi
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines//Library/Java/JavaVirtualMachines/jdk-11.0.11.jdk/Contents/Home
+export M2_HOME=/Users/naveenraj/apache-maven-3.8.1/bin
+
+
+Karate Quick Start
+https://github.com/intuit/karate#quickstart
+
+Karate Framewoke Youtube Channel
+https://youtube.com/playlist?list=PLMd2VtYMV0OQkXQ5BrHlZwoTqp17ACsnG
+
+Karate Zero to Hero Udemy course
+https://www.udemy.com/course/karate-dsl-api-automation-and-performance-from-zero-to-hero/
+
+
+To Download IntelliJ IDEA
+https://www.jetbrains.com/idea/download/#section=mac (Community Edition)
+
+Plugins for IntelliJ - Karate
+1. Cucumber for Java
+2. Gherkin
+
+To download Visual Studio Code
+https://code.visualstudio.com/download 
+
+Plugins for VSCode - Karate
+1. Cucumber (Gherkin) Full Support
+2. Karate Runner
+3. Open In Default Browser
+4. Java Extension Pack (5/6)
+
+
+To Download Eclipse
+https://www.eclipse.org/downloads/packages/
+
+Plugins for Eclipse - Karate
+1. Cucumber Eclipse plugin 
+2. Darkest Dark Theme with DevStyle
+
+https://bitbucket.org/tekion/tekionkarateapi/src/master/ 
+Karate Framework POC 
+
+
+
+
+To run via command line Karate
+mvn test "-Dkarate.options=--tags ~@regression” 
+mvn test "-Dkarate.options=--tags ~@regression" "-Dkarate.env=dev" 
+mvn test -DargLine="-Dkarate.env=e2e"
+
+this is an “AND” operation: tags("@customer", "@smoke")
+and this is an “OR” operation: tags("@customer,@smoke")
